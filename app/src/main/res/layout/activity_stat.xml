@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textALL"
+    android:layout_margin="20dp"
+    android:textSize="30dp"
+    android:text="Tous les Halls"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/pieChartALL"/>
+    <lecho.lib.hellocharts.view.PieChartView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/pieChartALL"
+        app:layout_constraintTop_toBottomOf="@id/textALL"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textA"/>
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/pieChartA"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/pieChartB"
+        app:layout_constraintTop_toBottomOf="@id/textA"
+
+        android:layout_height="0dp" />
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/pieChartB"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pieChartA"
+        app:layout_constraintRight_toLeftOf="@id/pieChartC"
+        app:layout_constraintTop_toBottomOf="@id/textB"
+        android:layout_height="0dp" />
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/pieChartC"
+        android:layout_width="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pieChartB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textC"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/textA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+       android:layout_marginTop="20dp"
+        android:gravity="bottom|center"
+        android:text="Hall A"
+        app:layout_constraintRight_toLeftOf="@id/textB"
+        app:layout_constraintTop_toBottomOf="@id/pieChartALL"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pieChartA"
+
+         />
+
+    <TextView
+        android:id="@+id/textB"
+        android:textSize="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pieChartALL"
+        android:layout_marginTop="20dp"
+        android:text="Hall B"
+        android:gravity="bottom|center"
+        app:layout_constraintEnd_toStartOf="@+id/textC"
+        app:layout_constraintBottom_toTopOf="@id/pieChartB"
+        app:layout_constraintStart_toEndOf="@+id/textA"
+        />
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom|center"
+        android:text="Hall C"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/pieChartALL"
+app:layout_constraintBottom_toTopOf="@id/pieChartC"
+        app:layout_constraintLeft_toRightOf="@id/textB"
+       app:layout_constraintRight_toRightOf="parent"
+         />
+</android.support.constraint.ConstraintLayout>

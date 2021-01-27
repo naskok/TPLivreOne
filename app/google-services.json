@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "738292838945",
+    "firebase_url": "https://tplivre-ab61c.firebaseio.com",
+    "project_id": "tplivre-ab61c",
+    "storage_bucket": "tplivre-ab61c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738292838945:android:3edaa5bedfcd9467",
+        "android_client_info": {
+          "package_name": "com.example.tplivre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738292838945-7d5dc263k8ar903utu7fn36icsbmvt19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tplivre",
+            "certificate_hash": "c83a30999a6070567e7b814fea6ad291895065c3"
+          }
+        },
+        {
+          "client_id": "738292838945-dae6m5731t6ctmk3uh4clpqh5618iddj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQgSgol2KnpRa_AFNK7plTRD4lhPTfpvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738292838945-dae6m5731t6ctmk3uh4clpqh5618iddj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

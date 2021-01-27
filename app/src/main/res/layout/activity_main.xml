@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+<android.support.v7.widget.AppCompatButton
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:id="@+id/btnRaj"
+app:layout_constraintBottom_toTopOf="@+id/btnClient"
+    app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toLeftOf="@+id/btnLouer"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="Rajouter \n un Livre"
+    app:layout_constraintDimensionRatio="1:1"
+    android:background="@drawable/rounded_corners"
+ />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLouer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+
+        android:background="@drawable/rounded_corners"
+        android:text="Louer \n un Livre"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnRendre"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/btnRaj"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnClient"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:background="@drawable/rounded_corners"
+        android:text="Rajouter \n un Client"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintBottom_toTopOf="@id/btnStat"
+        app:layout_constraintEnd_toStartOf="@+id/btnLouer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRaj"
+       />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnRendre"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:background="@drawable/rounded_corners"
+        android:text="Rendre \n un livre"
+        app:layout_constraintBottom_toTopOf="@+id/btnInfo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/btnClient"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRaj" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnStat"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+app:layout_constraintDimensionRatio="1:1"
+
+        android:background="@drawable/rounded_corners"
+        android:text="Stats "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClient" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/btnInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnClient"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClient"
+        android:text="Infos"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="@drawable/rounded_corners"
+
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
