@@ -54,6 +54,13 @@ Button btnRajouter, btnClient, btnLoc, btnRendre, btnStat, btnInfo;
 
             }
         });
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent intent=new Intent(MainActivity.this, InfoActivity.class);
+                    startActivity(intent);
+            }
+        });
 
 
     }
